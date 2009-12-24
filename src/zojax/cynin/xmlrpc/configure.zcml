@@ -1,0 +1,19 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:zojax="http://namespaces.zope.org/zojax"
+   xmlns:browser="http://namespaces.zope.org/browser"
+   xmlns:xmlrpc="http://namespaces.zope.org/xmlrpc"
+   i18n_domain="zojax.cynin.xmlrpc">
+
+  <includeDependencies package="." />
+  <include package="zope.app.publisher.xmlrpc" file="meta.zcml" />
+
+  <xmlrpc:view
+    name="stacker"
+    for="*"
+    methods="sayhello getSiteTitle getSiteLogo getStatusMessage getUserInfo getRecentUpdates getTypeInfo search getComments addNewComment getBlogEntry getFileInfo getEventInfo getWikiBody"
+    class=".view.StackerView"
+    permission="zope.View"
+  />
+
+</configure>
