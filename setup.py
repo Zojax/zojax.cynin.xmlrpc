@@ -56,7 +56,6 @@ setup(name = 'zojax.cynin.xmlrpc',
                           'zope.schema',
                           'zope.app.publisher',
                           'zope.i18nmessageid',
-                          'z3c.autoinclude',
                           ],
       include_package_data = True,
       zip_safe = False
