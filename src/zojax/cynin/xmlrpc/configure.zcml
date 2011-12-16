@@ -3,7 +3,10 @@
    xmlns:zojax="http://namespaces.zope.org/zojax"
    xmlns:browser="http://namespaces.zope.org/browser"
    xmlns:xmlrpc="http://namespaces.zope.org/xmlrpc"
+   xmlns:i18n="http://namespaces.zope.org/i18n"
    i18n_domain="zojax.cynin.xmlrpc">
+
+  <i18n:registerTranslations directory="locales" />
 
   <includeDependencies package="." />
   <include package="zope.app.publisher.xmlrpc" file="meta.zcml" />
