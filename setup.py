@@ -57,6 +57,11 @@ setup(name = 'zojax.cynin.xmlrpc',
                           'zope.app.publisher',
                           'zope.i18nmessageid',
                           ],
+      extras_require = dict(test=['zope.app.testing',
+                                  'zope.app.zcmlfiles',
+                                  'zope.app.file',
+                                  'zope.testing',
+                                  'zope.testbrowser',]),
       include_package_data = True,
       zip_safe = False
       )

@@ -1,0 +1,18 @@
+Call our xmlrpc method:
+
+  >>> from zope.app.testing.xmlrpc import ServerProxy
+  >>> proxy = ServerProxy("http://mgr:mgrpw@localhost/stacker", handleErrors = False)
+  >>> proxy.sayhello()
+  'Hello'
+
+  >>> proxy.getSiteTitle()
+  'Test Site'
+
+  >>> proxy.getSiteLogo()
+  'http://localhost/@@/logo.png'
+
+  >>> proxy.getUserInfo('zope.mgr')
+   {'username': 'zope.mgr', 'portrait_url': 'profileImage', 'description': '', 'home_page': '', 'location': '', 'fullname': 'Manager', 'email': ''}
+
+  >>> proxy.getStatusMessage()
+  'Under development'

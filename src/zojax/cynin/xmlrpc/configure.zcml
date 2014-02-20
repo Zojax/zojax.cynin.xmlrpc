@@ -8,7 +8,7 @@
 
   <i18n:registerTranslations directory="locales" />
 
-  <includeDependencies package="." />
+  <includeAllDependencies package="." />
   <include package="zope.app.publisher.xmlrpc" file="meta.zcml" />
 
   <xmlrpc:view
