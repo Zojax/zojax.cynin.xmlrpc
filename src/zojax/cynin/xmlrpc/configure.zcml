@@ -8,6 +8,7 @@
 
   <i18n:registerTranslations directory="locales" />
 
+  <include package="zojax.autoinclude" file="meta.zcml" />
   <includeAllDependencies package="." />
   <include package="zope.app.publisher.xmlrpc" file="meta.zcml" />
 
